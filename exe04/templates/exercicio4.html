@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dados de inscrição para evento</title>
+  </head>
+  <body>
+    <h1>Evento</h1>
+    <form action="/submissao" method="get">
+      <label for="nome"> Nome: </label>
+      <input type="text" id="nome" name="nome" required />
+      <br /><br />
+      <label for="email"> Endereço de email: </label>
+      <input type="email" id="email" name="email" required />
+      <br /><br/>
+      <label for="number"> Número de telefone </label>
+      <input type="number" id="number" name="number" required /><br /><br/>
+      <label for="eventos"> Eventos </label><br>
+      <input type="checkbox" name="eventos" value="Palestra 1"> Palestra 1<br /><br/>
+      <input type="checkbox" name="eventos" value="Palestra 2"> Palestra 2<br /><br/>
+      <input type="checkbox" name="eventos" value="Palestra 3"> Palestra 3<br /><br/> 
+      <input type="submit" value="Enviar"/>
+    </form>
+  </body>
+</html>
