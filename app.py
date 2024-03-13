@@ -73,22 +73,21 @@ def exe05_result():
 
 @app.route("/index/exe06")
 def exe06():
-    return render_template("exe06.html")
+    return render_template("exercicio6.html")
 
 @app.route("/exe06-result")
 def exe06_result():
-    nome = request.args.get('name')
-    email = request.args.get('mail')
-    checkin = request.args.get('in')
-    checkout = request.args.get('out')
-    numero = request.args.get('numero')
-    quartos = request.args.get('quartos')
+    nome = request.args.get('nome')
+    idade = request.args.get('idade')
+    email = request.args.get('email')
+    options = request.args.get('options')
+    options2 = request.args.get('options2')
     
-    return f"<h1>Sucesso!</h1><br>nome: {nome}<br>endereco: {email}<br>contato: {checkin}<br>comidas escolhidos: {checkout}<br>entrega escolhida: {numero}<br>tipo de quarto escolhido: {quartos}"
+    return f"<h1>Sucesso!</h1><br>nome: {nome}<br>endereco: {idade}<br>contato: {email}<br>comidas escolhidos: {options}<br>entrega escolhida: {options2}"
 
 @app.route("/index/exe07")
 def exe07():
-    return render_template("exe07.html")
+    return render_template("exercicio7.html")
 
 @app.route("/exe07-result")
 def exe07_result():
