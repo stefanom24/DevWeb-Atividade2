@@ -118,30 +118,28 @@ def exe08_result():
 
 @app.route("/index/exe09")
 def exe09():
-    return render_template("exe09.html")
+    return render_template("exercicio9.html")
 
 @app.route("/exe09-result")
 def exe09_result():
-    nome = request.args.get('name')
-    email = request.args.get('mail')
-    checkin = request.args.get('in')
-    checkout = request.args.get('out')
-    numero = request.args.get('numero')
-    quartos = request.args.get('quartos')
+    nome = request.args.get('nome')
+    email = request.args.get('email')
+    area = request.args.get('area')
+    disponibilidade = request.args.get('disponibilidade')
+    hora = request.args.get('hora')
     
-    return f"<h1>Sucesso!</h1><br>nome: {nome}<br>endereco: {email}<br>contato: {checkin}<br>comidas escolhidos: {checkout}<br>entrega escolhida: {numero}<br>tipo de quarto escolhido: {quartos}"
+    return f"<h1>Sucesso!</h1><br>nome: {nome}<br>endereco: {email}<br>contato: {area}<br>comidas escolhidos: {disponibilidade}<br>entrega escolhida: {hora}"
 
 @app.route("/index/exe10")
 def exe10():
-    return render_template("exe10.html")
+    return render_template("exercicio10.html")
 
 @app.route("/exe10-result")
 def exe10_result():
     nome = request.args.get('name')
-    email = request.args.get('mail')
-    checkin = request.args.get('in')
-    checkout = request.args.get('out')
-    numero = request.args.get('numero')
-    quartos = request.args.get('quartos')
+    telefone = request.args.get('telefone')
+    email = request.args.get('email')
+    educacao = request.args.get('educacao')
+    futuro = request.args.get('futuro')
     
-    return f"<h1>Sucesso!</h1><br>nome: {nome}<br>endereco: {email}<br>contato: {checkin}<br>comidas escolhidos: {checkout}<br>entrega escolhida: {numero}<br>tipo de quarto escolhido: {quartos}"
+    return f"<h1>Sucesso!</h1><br>nome: {nome}<br>endereco: {email}<br>contato: {telefone}<br>comidas escolhidos: {educacao}<br>entrega escolhida: {futuro}"

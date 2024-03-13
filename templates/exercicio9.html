@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fórmulario de cadastro para voluntários </title>
+</head>
+<body>
+
+    <a href="/index/voltar">Voltar</a>
+
+    <form action="/exe09-result" method="get">
+        <label for="nome"> Nome: </label>
+        <input type="name" id="nome" nome="nome">
+        <br/> <br/>
+
+        <label for="mail"> Email: </label>
+        <input type="email" id="email" name="email">
+        <br/> <br/>
+
+        <label for="interesse"> Áreas de interesse: </label>
+        <select name="area">
+            <option value="none">   </option>
+            <option value="Pets"> Pets </option>
+            <option value="entrega"> Entrega de comidas e cobertores </option>
+            <option value="entrega"> Doações </option>
+        </select>
+        <br/><br/>
+
+        <label for="disponibilidade"> Disponibilidade de dias: </label>
+        <select name="disponibilidade">
+            <option value="none">   </option>
+            <option value="Segunda"> Segunda </option>
+            <option value="Terça"> Terça </option>
+            <option value="Quarta"> Quarta </option>
+            <option value="Quinta"> Quinta </option>
+            <option value="Terça"> Sexta </option>
+            <option value="Terça"> Sábado </option>
+        </select>
+        <br/> <br/>
+
+        <label for="time"> Horário disponivel </label>
+        <input type="time" id="hora" nome="hora">
+        <br/><br/> 
+
+        <input type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>
